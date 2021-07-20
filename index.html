@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Converter App</title>
+  </head>
+  <body>
+    <!-- <div class="info"><h2>Hello</h2></div> -->
+    <div class="litres">
+      <label for="lit">Litres to Gallons</label>
+      <input
+        required
+        type="number"
+        name="lit"
+        id="lit"
+        placeholder="Enter Litres"
+      />
+      <button id="gal" type="submit" onclick="litreToGallon()">Convert</button>
+      <div id="resLit"></div>
+    </div>
+    <div class="miles">
+      <label for="mil">Miles to Kilometers</label>
+      <input
+        type="number"
+        name="mil"
+        id="mil"
+        placeholder="Enter Miles"
+        required
+      />
+      <button id="km" type="submit" onclick="milesToKilometers()">
+        Convert
+      </button>
+      <div id="resMil"></div>
+    </div>
+    <div class="meters">
+      <label for="met">Meters to Feet</label>
+      <input
+        type="number"
+        name="met"
+        id="met"
+        placeholder="Enter Meters"
+        required
+      />
+      <button id="fe" type="submit" onclick="metersToFeet()">Convert</button>
+      <div id="resMet"></div>
+    </div>
+
+    <div class="block">
+      <div>
+        <label for="principal">Principal</label
+        ><input
+          type="Number"
+          name="Principal"
+          id="principal"
+          placeholder="P"
+          required
+        />
+      </div>
+      <div>
+        <label for="annIntrestRate">Annual interest Rate</label
+        ><input
+          type="Number"
+          name="AnnIntrestRate"
+          id="annIntrestRate"
+          placeholder="r"
+          required
+        />
+      </div>
+      <div>
+        <label for="noOfTimesComp"
+          >Number of cycles interest applied per period </label
+        ><input
+          type="Number"
+          name="NoOfTimesComp"
+          id="noOfTimesComp"
+          placeholder="n"
+          required
+        />
+      </div>
+      <div>
+        <label for="timeForMonInvested">Number of time periods elapsed</label
+        ><input
+          type="Number"
+          name="TimeForMonInvested"
+          id="timeForMonInvested"
+          placeholder="t"
+          required
+        />
+      </div>
+      <button
+        type="submit"
+        style="margin-left: 30%"
+        onclick="compoundIntrest(), location.href = output.html"
+      >
+        Calculate
+      </button>
+      <div id="inRes"></div>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>

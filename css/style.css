@@ -1,0 +1,32 @@
+body {
+  text-align: center;
+}
+
+div {
+  font-family: 'Open Sans', sans-serif;
+}
+
+label {
+  font-weight: bold;
+  display: inline-block;
+  width: 200px;
+  margin: 10px;
+  text-align: right;
+}
+
+.block {
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 5%;
+  border-style: solid;
+}
+
+input {
+  border-radius: 7px;
+}
+
+button {
+  color: black;
+  font-weight: bolder;
+  background-color: grey;
+}
